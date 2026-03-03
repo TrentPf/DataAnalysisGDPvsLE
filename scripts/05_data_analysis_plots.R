@@ -1,6 +1,9 @@
 library(tidyverse)
 library(readr)
 
+# OPTIONAL: Only run if wanting a minimalistic, clean theme for plots
+theme_set(theme_minimal())
+
 df <- read_csv("data_clean/wb_gdp_life_clean.csv")
 
 # Summarize data
@@ -17,6 +20,10 @@ summary_table <- df %>%
   )
 
 write_csv(summary_table, "outputs/tables/summary_stats.csv")
+
+# Make sure folders exist (prevents save errors)
+dir.create("outputs/tables", recursive = TRUE, showWarnings = FALSE)
+dir.create("outputs/figures", recursive = TRUE, showWarnings = FALSE)
 
 # Histogram (log GDP)
 p1 <- ggplot(df, aes(x = log_gdp)) +
