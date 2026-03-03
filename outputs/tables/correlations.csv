@@ -1,0 +1,3 @@
+measure,value
+Spearman (GDP vs LifeExp),0.8632999938925949
+Pearson (logGDP vs LifeExp),0.8231807633345173
