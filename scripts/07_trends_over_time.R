@@ -3,7 +3,7 @@ library(readr)
 
 df <- read_csv("data_clean/wb_gdp_life_clean.csv")
 
-years_keep <- c(2000, 2010, 2020, 2023)
+years_keep <- c(2000, 2010, 2020, 2023) # Checking every 10 years plus the most recent complete dataset available
 
 df2 <- df %>% filter(year %in% years_keep)
 
