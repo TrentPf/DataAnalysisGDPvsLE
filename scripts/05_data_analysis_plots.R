@@ -32,17 +32,14 @@ p1 <- ggplot(df, aes(x = log_gdp)) +
     bins = 35,
     fill = "steelblue",
     color = "black",
-    alpha = 0.85) +
-  geom_vline(
-    aes(xintercept = mean(log_gdp, na.rm = TRUE)),
-    color = "red",
-    linewidth = 1.1
-  )
+    alpha = 0.85
+  ) +
   labs(
-    title = "Distribution of Log GDP per Capita", 
-    x = "log(GDP per capita)", 
+    title = "Distribution of Log GDP per Capita",
+    x = "log(GDP per capita)",
     y = "Count"
-  )
+  ) +
+  theme_minimal()
 
 ggsave("outputs/figures/hist_log_gdp.png", p1, width = 8, height = 5)
 
@@ -59,24 +56,42 @@ p2 <- ggplot(df, aes(x = log_gdp, y = life_expectancy)) +
 
 ggsave("outputs/figures/scatter_life_vs_loggdp.png", p2, width = 8, height = 5)
 
-# Scatter: Log GDP vs Life Expecancy, plot by income group
+# Scatter: Log GDP vs Life Expectancy, plot by income group
 p3 <- ggplot(df, aes(x = log_gdp, y = life_expectancy)) +
-  geom_point(aes(color = income), alpha = 0.25, size = 1.4) +
+  # Points
+  geom_point(aes(color = income), alpha = 0.25, size = 1.3) +
+  
+  # Black outline for regression lines
+  geom_smooth(
+    aes(group = income),
+    method = "lm",
+    se = FALSE,
+    color = "black",
+    linewidth = 2.6,
+    linetype = "solid"
+  ) +
+  
+  # Colored regression lines on top
   geom_smooth(
     aes(color = income),
     method = "lm",
     se = FALSE,
-    linewidth = 1.6
+    linewidth = 1.4,
+    linetype = "solid"
   ) +
+  
   scale_color_brewer(palette = "Set1") +
+  
   labs(
     title = "Life Expectancy vs Log GDP per Capita by Income Group",
     x = "log(GDP per capita)",
     y = "Life expectancy (years)",
     color = "Income Group"
-  )
+  ) +
+  
+  theme_minimal()
 
-ggsave("outputs/figures/scatter_by_income.png", p3, width = 10, height = 6)
+ggsave("outputs/figures/scatter_by_income.png", p3, width = 10, height = 6, dpi = 300)
 
 # Scatter: GDP vs Life Expectancy
 # Unmodified, unscaled, as bare bones as the data set can be rendered
@@ -93,20 +108,37 @@ ggsave("outputs/figures/scatter_life_vs_gdp.png", p4, width = 8, height = 5, dpi
 
 # Scatter: GDP vs Life Expectancy
 p5 <- ggplot(df, aes(x = gdp_per_capita, y = life_expectancy)) +
-  geom_point(aes(color = income), alpha = 0.25, size = 1.4) +
+  # Points
+  geom_point(aes(color = income), alpha = 0.25, size = 1.3) +
+  
+  # Black outline for regression lines
+  geom_smooth(
+    aes(group = income),
+    method = "lm",
+    se = FALSE,
+    color = "black",
+    linewidth = 2.6,
+    linetype = "solid"
+  ) +
+  
+  # Colored regression lines on top
   geom_smooth(
     aes(color = income),
     method = "lm",
     se = FALSE,
-    linewidth = 1.6
+    linewidth = 1.4,
+    linetype = "solid"
   ) +
+  
   scale_color_brewer(palette = "Set1") +
   labs(
     title = "Life Expectancy vs GDP per Capita by Income Group",
     x = "GDP per Capita (USD)",
     y = "Life Expectancy (years)",
-    color = "Income Group"
-  )
+    color = "Income Group",
+    linetype = "Income Group"
+  ) + 
+  theme_minimal()
 
 ggsave("outputs/figures/scatter_gdp_by_income.png", p5, width = 10, height = 6, dpi = 300)
 
