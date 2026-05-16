@@ -31,6 +31,12 @@ This project uses publicly available World Bank economic and health datasets to 
 
 ---
 
+## System Architecture
+
+<img width="1600" height="900" alt="gdp_life_expectancy_analysis_pipeline" src="https://github.com/user-attachments/assets/78c8203e-1c75-4870-9dce-ccd19fd8804a" />
+
+---
+
 ## Screenshots
 
 ### Histogram: Distribution of Log GDP per Capita
