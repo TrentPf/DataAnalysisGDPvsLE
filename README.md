@@ -31,6 +31,12 @@ This project uses publicly available World Bank economic and health datasets to 
 
 ---
 
+## Screenshots
+
+Histogram Log_GDP
+
+![Histogram Log_GDP Screenshot](outputs/hist_log_gdp.png)
+
 ## Data Source
 
 The datasets used in this project were obtained from the World Bank Open Data platform.
