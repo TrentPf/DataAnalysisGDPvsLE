@@ -63,7 +63,7 @@ This project uses publicly available World Bank economic and health datasets to 
 
 ---
 
-### Multi Scatter Plot: Life Expectancy vs Log GDP per Capita over time (2000, 2010, 2020, 2023)
+### Multi Scatter Plot: Life Expectancy vs Log GDP per Capita Over Time (2000, 2010, 2020, 2023)
 
 ![Scatter Over Time Screenshot](outputs/figures/scatter_over_time_facets.png)
 
