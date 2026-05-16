@@ -2,6 +2,8 @@
 
 This project analyzes the relationship between GDP and life expectancy using R. It includes raw data, cleaned data, analysis scripts, and generated outputs.
 
+This project uses publicly available World Bank economic and health datasets to analyze correlations between GDP per capita and life expectancy across countries.
+
 ---
 
 ## Skills Demonstrated
