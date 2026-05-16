@@ -33,7 +33,7 @@ This project uses publicly available World Bank economic and health datasets to 
 
 ## Screenshots
 
-### Histogram: Distribution of Log GDP
+### Histogram: Distribution of Log GDP per Capita
 
 ![Histogram Log_GDP Screenshot](outputs/figures/hist_log_gdp.png)
 
