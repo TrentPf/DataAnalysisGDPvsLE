@@ -33,9 +33,31 @@ This project uses publicly available World Bank economic and health datasets to 
 
 ## Screenshots
 
-Histogram Log_GDP
+Histogram Distribution of Log GDP
 
-![Histogram Log_GDP Screenshot](outputs/hist_log_gdp.png)
+![Histogram Log_GDP Screenshot](outputs/figures/hist_log_gdp.png)
+
+Scatter Plot Life Expectancy vs GDP by Income Group
+
+![Scatter Life vs GDP by Income Screenshot](outputs/figures/scatter_gdp_by_income.png)
+
+Scatter Plot Life Expectancy vs Log GDP by Income Group
+
+![Scatter Life vs Log GDP by Income Screenshot](outputs/figures/scatter_by_income.png)
+
+Scatter Plot Life Expectancy vs GDP
+
+![Scatter Life vs GDP Screenshot](outputs/figures/scatter_life_vs_gdp.png)
+
+Scatter Plot Life Expectancy vs Log GDP
+
+![Scatter Life vs Log GDP Screenshot](outputs/figures/scatter_life_vs_loggdp.png)
+
+Scatter Plots: Life Expectancy vs Log GDP over time (2000, 2010, 2020, 2023)
+
+![Scatter Over Time Screenshot](outputs/figures/scatter_over_time_facets.png)
+
+---
 
 ## Data Source
 
