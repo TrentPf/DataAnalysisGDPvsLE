@@ -39,31 +39,31 @@ This project uses publicly available World Bank economic and health datasets to 
 
 ---
 
-### Scatter Plot: Life Expectancy vs GDP by Income Group
+### Scatter Plot: Life Expectancy vs GDP per Capita by Income Group
 
 ![Scatter Life vs GDP by Income Screenshot](outputs/figures/scatter_gdp_by_income.png)
 
 ---
 
-### Scatter Plot: Life Expectancy vs Log GDP by Income Group
+### Scatter Plot: Life Expectancy vs Log GDP per Capita by Income Group
 
 ![Scatter Life vs Log GDP by Income Screenshot](outputs/figures/scatter_by_income.png)
 
 ---
 
-### Scatter Plot: Life Expectancy vs GDP
+### Scatter Plot: Life Expectancy vs GDP per Capita
 
 ![Scatter Life vs GDP Screenshot](outputs/figures/scatter_life_vs_gdp.png)
 
 ---
 
-### Scatter Plot: Life Expectancy vs Log GDP
+### Scatter Plot: Life Expectancy vs Log GDP per Capita
 
 ![Scatter Life vs Log GDP Screenshot](outputs/figures/scatter_life_vs_loggdp.png)
 
 ---
 
-### Multi Scatter Plot: Life Expectancy vs Log GDP over time (2000, 2010, 2020, 2023)
+### Multi Scatter Plot: Life Expectancy vs Log GDP per Capita over time (2000, 2010, 2020, 2023)
 
 ![Scatter Over Time Screenshot](outputs/figures/scatter_over_time_facets.png)
 
